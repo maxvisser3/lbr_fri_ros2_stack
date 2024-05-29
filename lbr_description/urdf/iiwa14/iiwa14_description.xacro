@@ -287,10 +287,49 @@
         <joint name="joint_ee" type="fixed">
             <parent link="link_7" />
             <child link="link_ee" />
-            <origin xyz="0 0 0.035" rpy="0 0 0" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
         </joint>
 
         <link name="link_ee">
+            <inertial>
+            <origin
+                xyz="0.000436069480193717 0.00455908333558029 0.0856437852671541"
+                rpy="0 0 0" />
+            <mass
+                value="0.757985018555624" />
+            <inertia
+                ixx="0.00419094994549599"
+                ixy="-3.95978849276073E-05"
+                ixz="2.96437490574102E-05"
+                iyy="0.00395202324844905"
+                iyz="0.000242078295068782"
+                izz="0.00399011051416465" />
+            </inertial>
+            <visual>
+            <origin
+                xyz="0 0 -0.12"
+                rpy="0 0 -1.57" />
+            <geometry>
+                <mesh
+                filename="package://lbr_description/meshes/iiwa14/collision/link_magnet_new.stl" />
+                <!-- filename="package://flux1_description/meshes/collision/link_magnet_new.stl" /> -->
+            </geometry>
+            <material
+                name="">
+                <color
+                rgba="0.894117647058823 0.913725490196078 0.929411764705882 1" />
+            </material>
+            </visual>
+            <collision>
+            <origin
+                xyz="0 0 -0.12"
+                rpy="0 0 -1.57" />
+            <geometry>
+                <mesh
+                filename="package://lbr_description/meshes/iiwa14/collision/link_magnet_new.stl" />
+                <!-- filename="package://flux1_description/meshes/collision/link_magnet_new.stl" /> -->
+            </geometry>
+            </collision>
         </link>
     </xacro:macro>
 </robot>
