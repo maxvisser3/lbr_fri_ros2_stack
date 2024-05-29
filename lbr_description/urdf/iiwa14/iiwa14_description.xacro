@@ -307,12 +307,11 @@
             </inertial>
             <visual>
             <origin
-                xyz="0 0 -0.12"
+                xyz="0 0 -0.115"
                 rpy="0 0 -1.57" />
             <geometry>
-                <mesh
-                filename="package://lbr_description/meshes/iiwa14/collision/link_magnet_new.stl" />
-                <!-- filename="package://flux1_description/meshes/collision/link_magnet_new.stl" /> -->
+                <mesh filename="package://lbr_description/meshes/iiwa14/collision/link_magnet_new.stl" />
+                <!-- <mesh filename="package://flux1_description/meshes/collision/link_magnet_new.stl" /> -->
             </geometry>
             <material
                 name="">
@@ -322,12 +321,11 @@
             </visual>
             <collision>
             <origin
-                xyz="0 0 -0.12"
+                xyz="0 0 -0.115"
                 rpy="0 0 -1.57" />
             <geometry>
-                <mesh
-                filename="package://lbr_description/meshes/iiwa14/collision/link_magnet_new.stl" />
-                <!-- filename="package://flux1_description/meshes/collision/link_magnet_new.stl" /> -->
+                <mesh filename="package://lbr_description/meshes/iiwa14/collision/link_magnet_new.stl" />
+                <!-- <mesh filename="package://flux1_description/meshes/collision/link_magnet_new.stl" /> -->
             </geometry>
             </collision>
         </link>
